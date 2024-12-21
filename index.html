@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Орел - решка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/zero.css">
+    <link rel="stylesheet" href="assets/global.css">
+    <link rel="stylesheet" href="assets/header.css">
+    <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_line"></div>
+                <nav class="header_content">
+                    <div class="header_content_logo">
+                        <img src="assets/images/header/logo.svg" alt="SB">
+                    </div>
+                    <ul class="header_content_menu">
+                        <li class="header__selected">Монетка</li>
+                        <li>Кости</li>
+                        <li>Колесо</li>
+                        <li>Жребий</li>
+                    </ul>
+                    <div class="header_content_additional">
+                        <div class="header_additional_more">
+                            <p>Ещё</p>
+                            <img src="assets/images/header/arrow.svg" alt="\/">
+                        </div>
+                        <div class="header_additional_calendar">
+                            <img src="assets/images/header/calendar.svg" alt="">
+                            <p id="header_date">1</p>
+                            <p id="header_month">января</p>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header_line"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main_inner">
+                <section class="main_title">
+                    <h1>Наша монета - Ваша монета</h1>
+                    <h2>Данное приложение было создано, чтобы поставить точку в Ваших сомнениях</h2>
+                </section>
+                <section class="main_content">
+                    <div class="main_content_guide">
+                        <div class="main_guide_step">
+                            <div class="guide_img">
+                                <img src="assets/images/main/step-first.svg" alt="">
+                                <div class="guide_step">
+                                    <img src="assets/images/main/step-circle.svg" alt="">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                            <p class="guide_title">Выберите режим</p>
+                            <p class="guide_subtitle">Подбрасывайте самостоятельно или укажите количество подбросов</p>
+                        </div>
+                        <div class="main_guide_arrow">
+                            <img src="assets/images/main/step-arrow.svg" alt="">
+                        </div>
+                        <div class="main_guide_step">
+                            <div class="guide_img">
+                                <img src="assets/images/main/step-second.svg" alt="">
+                                <div class="guide_step">
+                                    <img src="assets/images/main/step-circle.svg" alt="">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            <p class="guide_title">Статистика</p>
+                            <p class="guide_subtitle">Посмотрите результаты каждого
+                                броска или общую статистику</p>
+                        </div>
+                    </div>
+                    <div class="main_content_game">
+                        <p class="game_title">МОНЕТКА</p>
+                        <div class="game_count">
+                            <p>Введите количество бросков</p>
+                            <input id="count" type="text" value="1">
+                        </div>
+                        <div class="game_coin">
+                            <div class="reshka">
+                                <img src="assets/images/main/reshka.png" alt="">
+                            </div>
+
+                            <div class="orel">
+                                <img src="assets/images/main/orel.png" alt="">
+                            </div>
+                        </div>
+                        <button id="flip">Подбросить</button>
+                    </div>
+                    <div class="main_content_stat">
+                        <p class="stat_every_title">Результаты каждого броска</p>
+                        <textarea name="stat" id="stat" cols="30" rows="30"></textarea>
+                        <p class="stat_all_title">Общая статистика</p>
+                        <div class="stat_all">
+                            <p class="orel_count">Количество орлов: <span id="orel">0</span> (<span id="orel_percent">0</span>%)</p>
+                            <p class="reshka_count">Количество решек: <span id="reshka">0</span> (<span id="reshka_percent">0</span>%)</p>
+                        </div>
+                        <button id="reset">Сбросить</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <p>Проект «КубГАУ», Краснодар, Россия.</p>
+                <p>SB.fortuna является зарегистрированной маркой. </p>
+            </div>
+        </div>
+    </footer>
+<script src="assets/index.js"></script>
+</body>
+</html>

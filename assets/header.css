@@ -1,0 +1,118 @@
+.header_line {
+    width: 100%;
+    height: 7px;
+    border-radius: 30px;
+    background: black;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 4px 0 black;
+}
+
+.header_inner {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header_content_logo {
+
+}
+
+.header_content_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header_content_menu li {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.82px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+
+.header__selected {
+    font-weight: 700 !important;
+    border-bottom: 4px solid black;
+}
+
+.header_content_additional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.header_additional_more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.header_additional_more p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.82px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.header_additional_more img {
+    width: 14px;
+    height: 14px;
+}
+
+.header_additional_calendar {
+    position: relative;
+    cursor: pointer;
+}
+
+#header_date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(20px) translateY(15px);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.82px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#header_month {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(4px) translateY(37px);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12.19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
